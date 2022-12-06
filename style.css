@@ -1,0 +1,588 @@
+html{
+    height: 100%;
+    background-color: #dadedc;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+div{
+    overflow: auto;
+}
+
+.mycontainer{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 0;
+    padding-bottom: 100px;
+}
+.content{
+    width: 100%;
+    margin-top: 60px;
+}
+.column-100,
+.column-75,
+.column-50,
+.column-25{
+    float: left;
+}
+.column-100{width: 100%;}
+.column-75{width: 75%;}
+.column-50{width: 50%;}
+.column-25{width: 25%;}
+
+nav {
+    background: rgb(109, 106, 106);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+nav ul {
+    
+    margin: auto;
+    padding: 15px;
+
+}
+nav ul li {
+    
+    display:inline ;
+    margin: 90px;
+    color: white;
+    list-style: none;
+    
+}
+nav ul li a {
+
+    
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: monospace;
+}
+nav ul li a:hover{
+    color: black;
+}
+/* Başlangıç Resim Yazı */
+#baslangic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/arkaplan.jpg");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+/* üST YAZI CSS */
+.baslangicyazi{
+display: flex;
+
+margin-top: 150px;
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.mldtxt {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.mldtxt:nth-child(1){
+	stroke: #3E606F;
+	animation-delay: -1s;
+}
+
+.mldtxt:nth-child(2){
+	stroke: #6C8190;
+	animation-delay: -2s;
+}
+
+.mldtxt:nth-child(3){
+	stroke: #91AA9D;
+	animation-delay: -3s;
+}
+
+.mldtxt:nth-child(4){
+	stroke: #193441;
+	animation-delay: -4s;
+}
+
+.mldtxt:nth-child(5){
+	stroke: #193441;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/* Başlıklar*/
+h1{
+    text-align: center;
+    font-family: 'Rubik Marker Hatch', cursive;
+    color: #193441;
+    
+    
+}
+h3{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.hedefyazi{
+    margin-top: 100px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+.hakkimdarsm{
+    width: 450px;
+}
+/* Projeler */
+.efekt {
+    position: relative;
+  }
+  
+.efekt img {
+    opacity: 1;
+    display: block;
+    width: 80%;
+    height: 400px;
+    /* height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 20px;
+    margin: auto;
+  }
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.efekt:hover .image {
+    opacity: 0.3;
+}
+  
+.efekt:hover .middle {
+    opacity: 1;
+}
+h3{
+    color: #193441;
+}
+  
+.text {
+    background-color: darkred;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.cubuk{
+    padding: 0 30px 0 0;
+}
+  /* iletisim css baslangic */
+#contact {
+    width: 600px;
+    margin:2em auto;
+    background:white;
+    position: relative;
+}
+#contact::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 100%;
+    left: 5%;
+    bottom: 0;
+    position: absolute;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 100%;
+    z-index: -1;
+}
+#contact article {
+      padding: 1em;
+}
+#contact h1 {
+    background: gray;
+    font-family: Oswald ,sans-serif;
+    font-size: 1.75em;
+    padding: 0.6em 0 0.6em 0.4em;
+    color: white;
+    text-shadow: 0 0.06em 0 #424242;
+    position: relative;
+}
+.contactbutton {
+    background: gray;
+    -webkit-box-shadow: 1px 1px 0 0 #1f7a82,2px 2px 0 0 #1f7a82,3px 3px 0 0 #1f7a82;
+    box-shadow: 1px 1px 0 0 #1f7a82,2px 2px 0 0 #1f7a82,3px 3px 0 0 #1f7a82;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.contactbutton:hover {
+    -webkit-box-shadow: 1px 1px 0 0 #1f7a82,0px 0px 0 0 #1f7a82,0px 0px 0 0 #1f7a82;
+    box-shadow: 1px 1px 0 0 #1f7a82,0px 0px 0 0 #1f7a82,0px 0px 0 0 #1f7a82;
+    margin-top: 22px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+.mail {
+    margin-top: 11px;
+    font-size: 15px;
+    display: inline-block;
+    border-top: 2em solid transparent;
+    border-left: 2.6em solid #fff;
+    height: 0;
+    width: 0;
+    position: relative;
+}
+.mail:before {
+    content: '';
+    top: -2.5em;
+    left: -2.95em;
+    display: block;
+    position: absolute;
+    border-top: 1.2em solid #fff;
+    border-left: 1.6em solid transparent;
+    border-right: 1.6em solid transparent;
+    border-bottom: 1em solid transparent;
+    font-size: 0.8em;
+}
+.mail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border-top: 2em solid transparent;
+    border-right: 2.6em solid #fff;
+    height: 0;
+    width: 0;
+    left: -2.18em;
+    bottom: 0;
+}
+#checkcontact{
+    position: absolute;
+    left: -99999px;
+}
+.contactform {
+    overflow: hidden;
+    max-height: 0px;
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    -ms-transition: all linear 1s;
+    transition: all linear 1s;
+}
+#checkcontact:checked + .contactform {
+    max-height: 1000px;
+}
+.input_wrapper {
+    position: relative;
+}
+.textarea_wrapper textarea {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    background: white;
+    border: 1px solid #DADADA;
+    box-shadow: 0 0 1px 0 #E4E4E4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: #5E5E5E;
+}
+.input_wrapper input[type="text"] {
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    background: white;
+    border: 1px solid #DADADA;
+    box-shadow: 0 0 1px 0 #E4E4E4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: #5E5E5E;
+    text-indent: 15%;
+}
+.input_wrapper input[type="text"]:focus {
+    background: rgba(242, 56, 90, 0.05);
+    box-shadow: inset 2px 2px 5px 0 #DADADA;
+    outline: none;
+    text-indent: 0;
+}
+.input_wrapper label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: gray;
+    color: white;
+    font-family: Oswald ,sans-serif;
+    box-sizing: border-box;
+    width: 15%;
+    text-align: center;
+    line-height: 2.8em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.input_wrapper input[type="text"]:focus + label {
+    left: 85%;
+}
+.textarea_wrapper textarea {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+      min-height:150px;
+    background: white;
+    border: 1px solid #DADADA;
+    box-shadow: 0 0 1px 0 #E4E4E4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    color: #5E5E5E;
+}
+.textarea_wrapper textarea:focus {
+    background: rgba(242, 56, 90, 0.05);
+    box-shadow: inset 2px 2px 5px 0 #DADADA;
+    outline: none;
+}
+.submit_wrapper {
+    text-align: center;
+}
+.submit_wrapper input {
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+    margin-top: 1em;
+    margin-bottom: 6px;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    font-family: Oswald ,sans-serif;
+    font-size: 1em;
+    border: none;
+    -webkit-box-shadow: 1px 1px 0 0 #1f7a82,2px 2px 0 0 #1f7a82,3px 3px 0 0 #1f7a82;
+    box-shadow: 1px 1px 0 0 #1f7a82,2px 2px 0 0 #1f7a82,3px 3px 0 0 #1f7a82;
+    -webkit-appearance: none;
+      -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+ }
+.submit_wrapper input:hover {
+    -webkit-box-shadow: 1px 1px 0 0 #1f7a82,0px 0px 0 0 #1f7a82,0px 0px 0 0 #1f7a82;
+    box-shadow: 1px 1px 0 0 #1f7a82,0px 0px 0 0 #1f7a82,0px 0px 0 0 #1f7a82;
+    margin-top: 22px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+.link:link, .link:visited {
+    background-color: gray;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+      
+.link:hover, .link:active {
+    background-color: gray;
+}
+    
+@media (max-width: 500px){
+    #contact {
+        width: 100%;
+    }
+    .input_wrapper label {
+        line-height: 3.5em;
+        font-size: 0.8em;
+    }
+}
+    /* footer başlangıç */
+.cls_footer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(109, 106, 106);
+    bottom: 0;
+}
+.cls_footer ul{
+    list-style: none;
+    display: flex;
+}
+.cls_footer ul li {
+    margin: 0 10px;
+}
+.cls_footer ul li a i {
+    display: flex;
+    column-gap: 25px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color,background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .25s;
+}
+.instagram:hover{
+    background-image: radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    outline-color: #a02d76;
+}
+.facebook:hover{
+    background-color: blue;
+    outline-color: blue;
+}
+.twitter:hover{
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+.linkedin:hover{
+    background-color: #0e76a8;
+    outline-color: #0e76a8;
+}
+@keyframes shake{
+    10%{transform: rotate(15deg)}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+::-webkit-scrollbar{
+    width: 15px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgb(109, 106, 106);
+     border-radius: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(109, 106, 106);
+    border: 1px solid black;
+}
+    
+@media screen and (max-width:1441px){
+    nav ul li{
+        padding: 3px 15px;
+        margin: auto;
+    }
+       
+}
+@media screen and (max-width:1300px){
+    .mycontainer{
+        width: 100%;
+        text-align: center;
+         padding: 0 30px;
+    }
+    .column-25,
+    .column-75{
+        width: 50%;
+    }
+           
+}
+    
+
+@media screen and (max-width:970px) {
+    .mycontainer{
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .column-50 {
+         width: 100%;
+        margin: auto;
+        padding: 0;
+                
+    }
+    nav{
+        display: none;
+    }
+
+}
+@media screen and (max-width:520px){
+    .hakkimdarsm{
+      width: 40%;  
+        
+    }
+}
+
+        
