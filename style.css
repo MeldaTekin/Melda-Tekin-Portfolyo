@@ -213,6 +213,7 @@ h3{
     font-size: 16px;
     padding: 16px 32px;
 }
+
 .cubuk{
     padding: 0 30px 0 0;
 }
@@ -356,6 +357,7 @@ h3{
     color: #5E5E5E;
     text-indent: 15%;
 }
+
 .input_wrapper input[type="text"]:focus {
     background: rgba(242, 56, 90, 0.05);
     box-shadow: inset 2px 2px 5px 0 #DADADA;
@@ -506,13 +508,15 @@ h3{
     background-image: radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     outline-color: #a02d76;
 }
-.facebook:hover{
-    background-color: blue;
-    outline-color: blue;
+.github:hover{
+    background-color: black;
+    outline-color: black;
+    color:white;
 }
-.twitter:hover{
-    background-color: #1da1f2;
-    outline-color: #1da1f2;
+.gonder:hover{
+    background-color: rgb(96, 7, 7);
+    outline-color: rgb(96, 7, 7);
+    color:white;
 }
 .linkedin:hover{
     background-color: #0e76a8;
