@@ -108,12 +108,16 @@ svg {
 .mldtxt {
     fill: none;
     stroke: white;
+    /* svg ile oluşturulan çizgiler stroke dasharray komutu ile kesikli hale gelir */
     stroke-dasharray: 6% 29%;
+    /* çizgi kalınlığını belirler */
     stroke-width: 5px;
+    /* kesikli çizginin sola doğru kaymaması için */
     stroke-dashoffset: 0%;
+    /* infinite linear animasyonun sürekli hareket etmesi */
     animation: stroke-offset 5.5s infinite linear;
 }
-
+/* nth-child html elementlerini belirli bir sıraya göre seçmemizi sağlar */
 .mldtxt:nth-child(1){
 	stroke: #3E606F;
 	animation-delay: -1s;
